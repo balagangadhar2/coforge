@@ -1,0 +1,37 @@
+public class hello{
+int modealyear;
+String fname;
+public hello(int year,String name){
+modealyear=year;
+fname=name;
+}
+public static void main(String[]args){
+hello s=new hello(197,"bala");
+System.out.println(mycar.mmodelyear+" "+mycar.name);
+}
+}
+}
+}
+
+----this------
+package bala;
+
+public class Cons {
+	public void m()
+	{
+		System.out.println("hii");
+	}
+	public void m1()
+	{
+		this.m();
+		
+	}
+	public static void main(String[]args){
+		{
+			Cons    c=new Con();
+			c.m1();
+		}
+	}
+	
+
+}

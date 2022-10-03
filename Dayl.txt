@@ -1,0 +1,719 @@
+to read a data from keyboard
+java provide a Scanner class present in 
+java.util.* pkg
+
+Constructor
+Scanner(InputStream in)
+
+methods
+int nextInt() reads the integer
+float nextFloat()
+double nextDouble()
+String next()
+String nextLine() reads the String with spaces.
+
+package alekhya;
+import java.util.Scanner;
+//import java.util.*;
+public class MyEx{
+public static void main(){
+Scanner s=new Scanner(System.in);
+System.out.println("enter the full name:");
+String fname=s.next();
+System.out.println("enter the 7th ans 8th sem marks:");
+double seven=s.nextDouble();
+double eight=s.nextDouble();
+double avg=(seven+eight)/2.0;//s.nextLine();
+System.out.println("enter designation:")
+String des=s.next();//nextLine()===des+=s.nextLine();
+System.out.println(fname+"a"+des+"Avg marks:"+avg+"%");
+}
+}
+
+
+enter the first number if first number ==1
+enter the second number if second number==2
+display correct
+if the 2nd no. is wrong
+display 2nd is invalid
+if the 
+
+
+package alekhya;
+import java.util.*;
+public class Control{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter 1st no.:");
+int n1=s.nextInt();
+if(n1==1)
+{
+System.out.println("enter 2nd no.:");
+int n2=s.nextInt();
+if(n2==2)
+{
+System.out.println("correct input");
+}
+else
+{
+System.out.println("2nd input is invalid");
+}
+}
+else{
+System.out.println("1st i/p is invalid");
+}
+}
+}
+
+
+
+package alekhya;
+import java.util.*;
+public class Control{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter month:");
+int m=s.nextInt();
+if((m==11)||(m==12)||(m==1))
+{
+System.out.println("winter");
+}
+else if((m==2)||(m==3)||(m==4))
+{
+System.out.println("winter");
+else if((m==2)||(m==3)||(m==4))
+{
+System.out.println("summer");
+}
+else if((m==5)||(m==6)||(m==7))
+{
+System.out.print("spring");
+}
+else if((m==8)||(m==9)||(m==10))
+{
+System.out.print("autumn");
+}
+else{
+System.out.println("invalid month");
+}
+
+
+
+
+package alekhya;
+import java.util.*;
+public class Control{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter limit:");
+int n=s.nextInt();
+while(n>0)
+{
+System.out.println(n);
+}
+}}
+
+
+
+
+
+
+package alekhya;
+import java.util.*;
+public class Control{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter limit:");
+int n=s.nextInt();
+do{
+System.out.println(n);
+}while(n>0);
+}
+}
+
+
+
+
+package alekhya;
+import java.util.*;
+public class Control{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter limit:");
+int n=s.nextInt();
+for(int i=n;i>0;i--)
+{
+System.out.println(i);
+}
+}}
+
+
+
+ARRAY::int a=new int[4];
+import java.util.*;
+public class Control{
+public static void main(String args[]){
+int a=new int[4];
+a[0]=10;a[1]=20;a[2]=30;a[3]=40;
+for(int i=0;i<a.length;i++)
+{System.out.println(a[i]+" ");
+}
+}
+}
+
+
+
+
+FOR EACH::IT IS ALSO CALLED ENHANCED FOR LOOP INTRODUCED IN JDK 1.5 VERSION
+import java.util.*;
+public class Control{
+public static void main(String args[]){
+int a=new int[4];
+a[0]=10;a[1]=20;a[2]=30;a[3]=40;
+for(int i:a)
+{System.out.println(i);
+}
+}
+}
+
+
+
+
+
+MULTI DIMENSIONAL ARRAY::
+import java.util.*;
+public class Control{
+public static void main(String args[]){
+int a[][]=new int[3][3];//[3][2] 
+a[0][0]=11;a[0][1]=21;a[0][2]=31;a[1][0]=41;a[1][1]=51;a[1][2]=61;a[2][0]=71;a[2][1]=81;a[2][2]=91;
+for(int i=0;i<a.length;i++)//for(int i[]:a)
+{
+for(int j=0;j<a.length;j++)//j<a[i].length//for(int j:i)
+{
+System.out.println(a[i][j]+" ");//no ln ====(a[i][j]+"\t")//println(j+"\t");
+}
+System.out.println();
+}
+}
+}
+
+
+
+DECLARE AN INTEGER ARRAY OF SIZE 8 INSERT ELEMENTS FROM KEYBOARD AND DISPLAY.
+import java.util.*;
+public class Ex6{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter array size:");
+int n=s.nextInt();
+int a[]=new int[n];
+System.out.println("enter elements");
+for(int i=0;i<a.length;i++)
+{
+a[i]=s.nextInt();
+}
+System.out.println("elements of array");
+for(int e:a)
+{
+System.out.println(e);
+}
+}
+}
+
+
+
+
+
+SWITCH CASE:::
+import java.util.*;
+public class Ex6{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter the day:");
+String day=s.next();
+switch(day)
+{
+case "mon":System.out.println("Today is Monday");break;
+case "tues":System.out.println("Today is Tuesday");break;
+case "wednes":System.out.println("Today is Wednesday");break;
+case "thurs":System.out.println("Today is Thursday");break;
+case "fri":System.out.println("Today is Friday");break;
+default:System.out.println("wek end");break;
+}
+}
+}
+
+
+
+USING CONTINUE DISPLAY THE ODD NUMBER B/W 1 TO 20
+
+import java.util.*;
+public class Ex6{
+public static void main(String args[]){
+for(int i=1;i<20;i+2)
+{
+if(i%2==0)
+{
+System.out.println(i);
+}
+continue;
+}
+}
+}
+
+
+
+1.FIND THE SUM OF TWO NUMBERS GIVE THE INPUT FROM COMMAND LINE ARGUMENTS USING ECLIPSE.
+2.WRITE A PROGRAM TO CHECK ENTERED NUMBER IS ARMSTRONG OR NOT.
+3.WRITE A PROGRAM TO CREATE A JAGGED ARRAY.
+4.ENTER THE 7 ELEMENTS FROM KEYBOARD STORE IT IN ARRAY USING BUBBLE/SELECTION SORT DISPLAY ARRAY ELEMENTS IN ASCENDING ORDER.
+
+1.
+class Adding{
+public static void main(String args[]){
+int a=Integer.parseInt(args[0]);
+int b=Integer.parseInt(args[1]);
+int s=a+b;
+System.out.println("sum"+s);
+}
+}
+
+
+
+2.ARMSTRONG
+import java.util.*;
+import java.lang.*;
+class Armstrong{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter number:");
+int n=s.nextInt();
+int  original ,remainder,result=0;
+original=n;
+while(original!=0)
+{
+remainder=original%10;
+result+=Math.pow(remainder,3);
+original/=10;
+}
+if(result==n)
+System.out.println(n+"is a armstrong");
+else
+System.out.println(n+"not");
+}
+}
+
+
+
+
+3.
+class Jagged {
+    public static void main(String[] args)
+    {
+        int r = 5;
+        int arr[][] = new int[r][];
+        for (int i = 0; i < arr.length; i++)
+            arr[i] = new int[i + 1];
+        int count = 0;
+        for (int i = 0; i < arr.length; i++)
+            for (int j = 0; j < arr[i].length; j++)
+                arr[i][j] = count++;
+        System.out.println("Contents of 2D Jagged Array");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++)
+                System.out.print(arr[i][j] + " ");
+            System.out.println();
+        }
+    }
+}
+
+
+
+4.
+import java.util.*;
+class Sort{
+static  void bubbleSort(int array[]) {
+    int size = array.length;
+    for (int i = 0; i < size - 1; i++)
+      for (int j = 0; j < size - i - 1; j++)
+        if (array[j] > array[j + 1]) {
+          int temp = array[j];
+          array[j] = array[j + 1];
+          array[j + 1] = temp;
+        }
+  }
+
+    public static void main(String args[]) {
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter no.of elements:");
+    int n=s.nextInt();
+    int a[]=new int[n];
+    System.out.println("enter elements");
+    for(int i=0;i<a.length;i++)
+    {
+     a[i]=s.nextInt();
+     }
+
+    Sort.bubbleSort(a);
+    
+    System.out.println("Sorted Array in Ascending Order:");
+    System.out.println(Arrays.toString(a));
+  }
+}
+
+
+
+
+
+CLASSES::
+template /blue print for an object,container for data/code
+METHODS::
+contains the behaviour of the class
+these expose the business logic
+2 types:1.abstract--does not have body.
+2.concrete--which have body  2--types  :
+1.void==does not return anything
+2.primitive//user defined
+OBJECT::
+properties==
+1.state--represents the properties of object.
+2.behaviour--represents the functionality of the object.
+3.id--also known as reference id
+when object is craeted java compiler provides a reference id to each object
+packagename.classname@hexadecimalvalue
+
+
+
+1.
+import java.util.*;
+class Add{
+int a,b,c;
+public void data(int m,int n,int o){
+a=m;
+b=n;
+c=0;
+}
+public int result(){
+return a+b+c;
+}
+}
+class Sum{
+public static void main(String args[]){
+//int sum;
+Add a=new Add();
+a.data(2,3,4);
+System.out.println("Sum:"+a.result());
+//int sum=Add.result();
+//System.out.println("sum:"+sum);
+}
+}
+
+
+
+2.
+import java.util.*;
+class Data{
+String name;
+String des;
+String company;
+String city;
+public void details(String na,String de,String com,String ci){
+name=na;
+des=de;
+company=com;
+city=ci;
+} 
+public void display(){
+System.out.println("I am"+name+"working as"+des+"in"+company+"at"+city);
+}
+}
+public class Emp{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter name:");
+String n=s.next();
+System.out.println("enter des:");
+String m=s.next();
+System.out.println("enter company:");
+String c=s.next();
+System.out.println("enter city:");
+String l=s.next();
+Data d=new Data();
+d.details(n,m,c,l);
+d.display();
+}
+}
+
+
+
+3.FIND THE CUBE OF THE NUMBER.
+
+import java.util.*;
+class Num{
+int number;
+public void ex(int a)
+{
+number=a;
+}
+public int display(){
+return number*number*number;
+}
+}
+public class Cube{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.println("enter number");
+int n=s.nextInt();
+Num num=new Num();
+num.ex(n);
+System.out.println("cube:"+num.display());
+}
+}
+
+
+
+METHOD OVERLOADING==
+code readability.also called compile time polymorphism.
+
+SUM OF 2,3,4 NUMBERS.
+
+
+class Sum1{
+public void add(int m,int n){
+System.out.println(m+n);
+}
+public void add(int m,int n,int o){
+System.out.println(m+n+o);
+}
+public void add(int m,int n,int o,int p){
+System.out.println(m+n+o+p);
+}
+public static void main(String[] args){
+Sum1 s=new Sum1();
+s.add(2,3);
+s.add(1,2,3);
+s.add(1,2,3,4);
+}
+}
+
+
+CONSTRUCTORS::
+default constructor is applied only if no constructors are present .
+
+import java.util.*;
+class Cons{
+int a,b,c;
+Cons(){
+System.out.println("hi");
+}
+
+Cons(int m,int n,int o){
+a=m;
+b=n;
+c=o;
+System.out.println("Sum:"+(a+b+c));
+}
+}
+class Constructor{
+public static void main(String args[]){
+//int sum;
+Cons a=new Cons();
+Cons a1=new Cons(1,2,3);
+}
+}
+
+
+
+THIS KEYWORD::
+class Person{
+int id;
+String name;
+Person(int id,String name)
+{
+id=id;//this.id=id;
+name=name;//this.name=name;
+}
+void dis(){
+System.out.println(id+"\t"+name);
+}
+public static void main(String args[]){
+Person p=new Person(101857,"Alekhya");
+p.dis();
+}
+}
+
+
+W.A.P TO INVOKE COPY CONSTRUCTOR
+W.A.P TO PROVE THAT THIS REFERS TO "current class instances
+
+
+
+class Student{
+int id;
+String name;
+int age;
+public Student(int id,String name){
+this();
+this.id=id;
+this.name=name;
+System.out.println(id+name);
+}
+public Student(){
+System.out.println("hi");
+}
+public Student(int id,String name,int age){
+this(id,name);
+this.age=age;
+System.out.println(id+name+age);
+}
+public static void main(String args[]){
+Student s=new Student();
+Student s1=new Student(1,"amit");
+Student s2=new Student(1,"anil",20);
+}
+}
+
+
+
+STATIC KEYWORD:::
+it is applied to instance variables
+method blocks and nested classes
+when u apply static key word to variablees
+such variables stored in separate memory area called class area
+these variables represents common 
+
+
+class Empl{
+int id;
+String name;
+static String company="coforge";
+Emp1(int id,String name){
+this.id=id;
+this.name=name;
+System.out.println(id+name+company);
+}
+public static void main(String args[]){
+Empl e=new Empl(101,"abc");
+Empl e1=new Empl(102,"xyz");
+}
+}
+
+
+STATIC BLOCK::
+ class Sample1{
+static void m(){
+{
+System.out.println("I am Static method");
+}
+static{
+System.out.println("i am static block");
+System.out.println(z);
+}
+public Sample1(){
+System.out.println("I am constructor");
+}
+public static void main(String args[]){
+m();
+Sample1 s=new Sample1();
+}
+}
+
+
+
+
+
+NESTED CLASSES:::
+1.STATIC ---
+2.NON STATIC
+
+ADVANTAGES--
+NESTED CLASSES ACCESS THE MEMBERS OF OUTER CLASS INCLUDING PRIVATE
+USED TO ACHIEVE THE CODE READABILITY MAINTAINABILITY CODE OPTIMIZATION
+
+
+NON STATIC NESTED CLASS HAVE 3 TYPES----
+1.MEMBER INNER CLASS----INSIDE THE CLASS AND OUTSIDE THE METHOD
+can have any access specifier.
+
+
+
+class Member{
+private int n=100;
+class Inner{
+void m(){
+System.out.println(n);
+}
+}
+void mout(){
+Inner i=new Inner();
+i.m();
+}
+public static void main(String args[]){
+Member mm=new Member();
+mm.mout();
+}
+} 
+
+2.LOCAL INNER CLASS--INSIDE CLASS AND INSIDE METHOD
+IT MUST HAVE ONLY FINAL OR DEFAULT ACCESS SPECIFIERS
+MUST ACCESS ONLY FINAL/DEFAULT LOCAL VARIABLES
+
+class Local{
+private int data=100;
+void m(){
+int data1=200;
+class LocalInner{
+void m1()
+{
+System.out.println(data);
+}
+}
+public static void main(String args[]){
+LocalInner l=new LocalInner();
+l.m1();
+}
+}
+}
+
+
+3.ANONYMOUS INNER CLASS
+
+
+
+
+
+
+
+
+STATIC NESTED CLASS----NESTED CLASS WUTH STATIC KEYWORD
+IT WILL ACCESS ONLY STATIC MEMBERS OF OUTER CLASS INCLUDING PRIVATE.
+INSIDE THE CLASS AND OUTSIDE THE METHOD.
+
+
+class StaticNested{
+static int data=100;
+static class Inner(){
+void m()//static void m()
+{
+System.out.println(data);
+}
+}
+public static void main(String args[]){
+StaticNested.Inner si=new StaticNested.Inner();//StaticNested.Inner
+si.m();
+}
+}
+
+
+
+
+
+
+1.CREATE A CLASS CALLED EMP WITH ID,NAME,DES AND BASIC SALARY READ FROM THE KEYBOARD
+CALCULATE NET SALARY
+NETSALARY=BASICSALARY+DA(150% OF BASIC SALARY)+HRA(30% OF BASIC SAL)+CCA(500)-TAX(1000)
+USE CONSTRUCTORS AND METHODS
+
+
+2.USING THE OOPS CONCEPTS AND STATIC METHOD FIND THE AREA OF TRIANGLE AND RECTANGLE.
